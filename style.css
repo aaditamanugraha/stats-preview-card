@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --primary-very-dark-blue-main-bg: hsl(233, 47%, 7%);
+  --primary-dark-desaturated-blue-card-bg: hsl(244, 38%, 16%);
+  --primary-soft-violet-accent: hsl(277, 64%, 61%);
+  --neutral-transparent-white-main-p: hsla(0, 0%, 100%, 0.75);
+  --neutral-transparent-white-stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-very-dark-blue-main-bg);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.938rem;
+}
+
+main {
+  background-color: var(--primary-dark-desaturated-blue-card-bg);
+  border-radius: 0.75rem;
+  margin: 0 auto 4rem;
+  max-width: 43.75rem;
+}
+
+.image {
+  margin: 0 auto 2rem;
+  background: url(images/image-header-mobile.jpg),
+    var(--primary-soft-violet-accent);
+  background-blend-mode: multiply;
+  opacity: 0.85;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 73.39%;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+article {
+  margin: 2rem 0;
+}
+
+h1,
+h2 {
+  color: white;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+
+h1 span {
+  color: var(--primary-soft-violet-accent);
+}
+
+p {
+  color: var(--neutral-transparent-white-main-p);
+  font-weight: 400;
+  margin: 0;
+}
+
+.features {
+  margin-bottom: 2rem;
+}
+
+.features h2 {
+  margin: 0 0 0.5rem;
+}
+
+.features p {
+  color: var(--neutral-transparent-white-stat-heading);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  font-size: 0.688rem;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer a:hover {
+  color: hsl(228, 76%, 56%);
+}
+
+@media screen and (min-width: 60.313rem) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    max-width: 90rem;
+  }
+
+  .container {
+    width: 50%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 50%;
+    height: 100%;
+  }
+
+  .image {
+    background: url(images/image-header-desktop.jpg),
+      var(--primary-soft-violet-accent);
+    border-radius: 0 0.75rem 0.75rem 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .content {
+    padding: 0 4rem;
+  }
+
+  article {
+    margin: 0 0 4rem 0;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  section {
+    margin: 0;
+  }
+}
